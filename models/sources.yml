@@ -5,3 +5,11 @@ sources:
     schema: RAW  
     tables:
       - name: orders
+        freshness:
+          warn_after:
+            count: 1
+            period: day
+          # error_after:
+          #   count: 2
+          #   period: day
+        loaded_at_field: 'to_timestamp(load_date)'
