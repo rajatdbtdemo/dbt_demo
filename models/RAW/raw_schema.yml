@@ -1,0 +1,11 @@
+
+version: 2
+
+models:
+  - name: order_raw
+    description: "add dbt load timestamp"
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - not_null

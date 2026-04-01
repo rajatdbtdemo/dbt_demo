@@ -1,0 +1,7 @@
+
+sources:
+  - name: dbt_demo_source
+    database: TEST  
+    schema: RAW  
+    tables:
+      - name: orders

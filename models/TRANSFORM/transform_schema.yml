@@ -1,0 +1,19 @@
+
+version: 2
+
+models:
+  - name: order_latest
+    description: "give the latest status on each order"
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: order_status
+        description: "Current status of each order"
+        tests:
+          - not_null
+          - check_order_status_value
+
+          

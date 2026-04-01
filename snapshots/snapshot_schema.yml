@@ -1,0 +1,22 @@
+
+version: 2
+
+snapshots:
+    - name: orders_snap_1
+      description: "This snapshot captures the state of orders over time."
+      columns:
+        - name: order_id
+          description: "The primary key for this table."
+        - name: product_id
+          description: "The unique identifier for each product."
+        - name: order_status
+          description: "The current status of the order."
+    - name: orders_snap_2
+      description: "This snapshot captures the state of orders over time."
+      columns:
+        - name: order_id
+          description: "The primary key for this table."
+        - name: product_id
+          description: "The unique identifier for each product."
+        - name: order_status
+          description: "The current status of the order."    
