@@ -3,7 +3,7 @@
     config(
         target_schema='TRANSFORM', 
         target_database='TEST', 
-        unique_key='order_id',  
+        unique_key=['order_id'],  
         strategy='timestamp', 
         updated_at='load_date'
     )
